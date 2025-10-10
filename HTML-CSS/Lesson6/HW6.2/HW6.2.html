@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            background-color: #1c8585;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .registration_form{
+            width: 60vw;
+            height: 50vh;
+            background-color: white;
+            border-radius: 10px;
+
+
+        }
+
+        .registration_form div:nth-child(1){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #c3d1d1;
+
+
+        }
+    </style>
 </head>
 <body>
+<div class="registration_form">
+    <div>
+        <h3>Log in / Sign in to your account</h3>
+    </div>
+    <form>
+        <input type="text" name="login">
+        <input type="password" name="password">
+        <div>
+            <Label>
+                Remember me
+                <input type="checkbox" name="remember">
+            </Label>
+                <input type="submit" value="Log in">
+        </div>
+
+    </form>
+</div>
 
 </body>
 </html>
