@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW 9.5</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .grid {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+        grid-template-rows: 0.5fr 2fr 1.9fr 1fr 1.2fr;
+        grid-template-areas:
+    "header header"
+    "content aside-top"
+    "content aside-bottom"
+    "section section"
+    "footer footer";
+    }
+    .grid header{
+        grid-area: header;
+        background: #8D8484;
+    }
+    .grid section:nth-child(2) {
+        grid-area: content-2;
+        background: #643030;
+    }
+    .grid aside:nth-child(3){
+        grid-area: aside-top;
+        background: #937575;
+    }
+    .grid aside:nth-child(4){
+        grid-area: aside-bottom;
+        background: #644C4C;
+    }
+    .grid section:nth-child(5){
+        grid-area: section;
+        background: #776969;
+    }
+    .grid footer{
+        grid-area: footer;
+        background: #BDBDBD;
+    }
+</style>
+
+<body>
+<div class="grid">
+    <header></header>
+    <section></section>
+    <aside></aside>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+</div>
+
+</body>
+</html>
